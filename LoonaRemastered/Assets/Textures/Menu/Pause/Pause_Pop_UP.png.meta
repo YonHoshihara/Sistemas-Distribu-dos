@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 6a1e73a997bce4fadab9a05388703490
+timeCreated: 1472565476
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pause_Pop_UP_0
+    21300002: Pause_Pop_UP_1
+    21300004: Pause_Pop_UP_2
+    21300006: Pause_Pop_UP_3
+    21300008: Pause_Pop_UP_4
+    21300010: Pause_Pop_UP_5
+    21300012: Pause_Pop_UP_6
+    21300014: Pause_Pop_UP_7
+    21300016: Pause_Pop_UP_8
+    21300018: Pause_Pop_UP_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pause_Pop_UP_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 971
+        width: 367
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_1
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1004
+        width: 308
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_2
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 0
+        width: 757
+        height: 1442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 587
+        width: 307
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 779
+        width: 186
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_5
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 777
+        width: 185
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_6
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 566
+        width: 181
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_7
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 566
+        width: 181
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 329
+        width: 448
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pause_Pop_UP_9
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

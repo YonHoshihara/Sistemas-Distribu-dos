@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 218f5ad08c87738449d8b988e297eb1b
+timeCreated: 1472091589
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Loona_Buttons_0
+    21300002: Loona_Buttons_1
+    21300004: Loona_Buttons_2
+    21300006: Loona_Buttons_3
+    21300008: Loona_Buttons_4
+    21300010: Loona_Buttons_5
+    21300012: Loona_Buttons_6
+    21300014: Loona_Buttons_7
+    21300016: Loona_Buttons_8
+    21300018: Loona_Buttons_9
+    21300020: Loona_Buttons_10
+    21300022: Loona_Buttons_11
+    21300024: Loona_Buttons_12
+    21300026: Loona_Buttons_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Loona_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 719
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 719
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 723
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 725
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 387
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 387
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 381
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 372
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 371
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 14
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 3
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 0
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Loona_Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3
+        width: 295
+        height: 285
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
