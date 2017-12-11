@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 //Kazuo
-public class ScaleController : MonoBehaviour {
+public class ScaleController : NetworkBehaviour {
     public float offset;
 	//public GameObject A, B;
 
@@ -15,12 +16,13 @@ public class ScaleController : MonoBehaviour {
 	
 		//Debug.Log(CompareScale (A,B));
 	}
-	public void Eat(GameObject ObjectToAddScale, float ScaleToAdd,float time){
+	[ClientRpc]
+	public void RpcEat(GameObject ObjectToAddScale, float ScaleToAdd){
 
 		if(ObjectToAddScale!=null){
-			Vector3 Scale = new Vector3 (ScaleToAdd,ScaleToAdd,0);
-			iTween.ScaleAdd (ObjectToAddScale,Scale,time);
-			//ObjectToAddScale.transform.localScale = new Vector3(ObjectToAddScale.transform.localScale.x+ScaleToAdd,ObjectToAddScale.transform.localScale.y+ScaleToAdd,0);
+			//Vector3 Scale = new Vector3 (ObjectToAddScale+ScaleToAdd,ObjectToAddScale+ScaleToAdd,0);
+			//iTween.ScaleAdd (ObjectToAddScale,Scale,time);
+			ObjectToAddScale.transform.localScale = new Vector3(ObjectToAddScale.transform.localScale.x+ScaleToAdd,ObjectToAddScale.transform.localScale.y+ScaleToAdd,0);
 		}
 	}
 	public GameObject CompareScale(GameObject ob1,GameObject ob2){

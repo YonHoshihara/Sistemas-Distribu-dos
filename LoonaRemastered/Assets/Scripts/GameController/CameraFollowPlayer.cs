@@ -9,18 +9,12 @@ public class CameraFollowPlayer : NetworkBehaviour {
 	public float MaxX,MinX, MaxY,MinY;
 	private GameObject MainCamera;
 	private float RelativeVelocity;
-	//private bool CanMove=true;
-
-	//private bool InputActivated = false;
 	public Vector3 targetPos,CameraInitialPosition;
 	// Use this for initialization
 	void Start()
 	{
-
-		//target = GameObject.FindGameObjectWithTag("Player");
 		targetPos = transform.position;
 		MainCamera = gameObject;
-		// Adjust Camera Limits According do BG with Edge Collide
 	}
 	// Update is called once per frame
 	void FixedUpdate()
@@ -50,16 +44,8 @@ public class CameraFollowPlayer : NetworkBehaviour {
 		return LimitVectorChecker;
 	}
 		
-
-
 	[Client]
 	public void CameraMoviment(){
-	
-		//if(!isLocalPlayer){
-
-			//return;
-	//	}
-
 
 		Vector3 LimitVectorChecker;
 		Vector3 posNoZ = MainCamera.transform.position;

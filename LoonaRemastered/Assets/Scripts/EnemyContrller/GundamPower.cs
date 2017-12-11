@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 //Isabella
-public class GundamPower : MonoBehaviour {
+public class GundamPower : NetworkBehaviour {
     public float percentToAdd;
     private ScaleController scaleController;
     private float ScalleAddToObject;
@@ -23,7 +24,7 @@ public class GundamPower : MonoBehaviour {
 
 
 			ScalleAddToObject = other.gameObject.GetComponent<SpriteRenderer>().bounds.size.x * percentToAdd / 100;
-            scaleController.Eat(other.gameObject, -ScalleAddToObject, TimeToAddScale);
+            //scaleController.Eat(other.gameObject, -ScalleAddToObject);
         }
 
     }

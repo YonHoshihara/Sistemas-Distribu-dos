@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class EatOpponent : MonoBehaviour {
+public class EatOpponent : NetworkBehaviour {
     // Isabella
     public GameObject Object;
     private bool collided;
@@ -16,15 +17,21 @@ public class EatOpponent : MonoBehaviour {
 	private GameObject obj;
 	public  float ScaleToadjustCamera;
 	private GameObject Camera;
+	private Vector3 StartScale;
+	//[SyncVar]public bool IsDead= false;
+
 	[SerializeField] private float MaxTamCamera;
     // Use this for initialization
-    void Start () {
+	[Client]
+	void Start () {
         collided = false;  
 		scaleController = GameObject.FindGameObjectWithTag("Controller").GetComponent<ScaleController>();
 		Camera = GameObject.FindGameObjectWithTag ("MainCamera");
-        score = GameObject.FindGameObjectWithTag("BGcontroller").GetComponent<ScoreManager>();
+		StartScale = gameObject.transform.localScale;
+       // score = GameObject.FindGameObjectWithTag("BGcontroller").GetComponent<ScoreManager>();
     }	
-    IEnumerator OnCollisionEnter2D(Collision2D other)
+    
+	IEnumerator OnCollisionEnter2D(Collision2D other)
     {   
 		
 			if((other.gameObject.tag == "Enemy")||(other.gameObject.tag == "Player"))
@@ -32,9 +39,8 @@ public class EatOpponent : MonoBehaviour {
 			if(gameObject.tag == "Player"){
 				Bigger = scaleController.CompareScale(gameObject, other.gameObject);
 				if(Bigger == other.gameObject){
-					gameObject.GetComponentInChildren<Animator>().SetTrigger("Hurt");
+					//gameObject.GetComponentInChildren<Animator>().SetTrigger("Hurt");
 					//Handheld.Vibrate ();
-
 				}
 
 			}
@@ -49,21 +55,23 @@ public class EatOpponent : MonoBehaviour {
 					{
                         if (Bigger.GetComponent<SpriteRenderer>().bounds.size.x <= 20)
                         {
-                            scaleController.Eat(Bigger, ScalleAddToObject, TimeToAddScale);
+							CmdScaleAdd(Bigger, ScalleAddToObject);
                         }            
 						if (Bigger == gameObject) {
 							collided = false;
-							Destroy (obj); 
+							CmdDestroyObj (obj); 
 							if(gameObject.tag == "Player")
 							{
-								score.SetScore(scoreToAdd);
+								//score.SetScore(scoreToAdd);
 								if (Camera.GetComponent<Camera> ().orthographicSize <= MaxTamCamera) {
-									Camera.GetComponent<Camera> ().orthographicSize = Camera.GetComponent<Camera> ().orthographicSize + ScaleToadjustCamera;
+									//Camera.GetComponent<Camera> ().orthographicSize = Camera.GetComponent<Camera> ().orthographicSize + ScaleToadjustCamera;
+									//adjustCamera();
 								}
 							}
 						} else {
 							collided = false;
-							Destroy (gameObject); 
+
+							CmdDestroyObj(gameObject); 
 						}
 					}     
 				} 
@@ -85,9 +93,35 @@ public class EatOpponent : MonoBehaviour {
     }
 	IEnumerator DestroyOnTime(GameObject obj,float TimeToDestroy){
 		yield return new WaitForSeconds (TimeToDestroy);
-		Destroy (obj); 
+		obj.GetComponent<EatOpponent> ().RpcRespawn ();
+		//CmdDestroyObj (obj); 
 	
 	}
+	[Command]
+	public void CmdDestroyObj(GameObject obj){
+		obj.GetComponent<EatOpponent> ().RpcRespawn ();
+		//Destroy (obj);
+	}
+	[Command]
+	public void CmdScaleAdd(GameObject obj, float scaleUpdate){
 
+		//obj.GetComponent<EatOpponent> ().die = true;
+		scaleController.RpcEat (obj,scaleUpdate);
+	}
+
+	[Client]
+	public void adjustCamera(){
+		if(!isLocalPlayer){
+			return;
+			Camera.GetComponent<Camera> ().orthographicSize = Camera.GetComponent<Camera> ().orthographicSize + ScaleToadjustCamera;
+		}
+	}
+
+	[ClientRpc]
+	public void RpcRespawn(){
+		Transform spawn = NetworkManager.singleton.GetStartPosition ();
+		gameObject.transform.localScale = StartScale;
+		gameObject.transform.position = spawn.position;
+	}	
 
 }
